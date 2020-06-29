@@ -1,0 +1,24 @@
+.place-card__des {
+  font-family: "Roboto-Regular";
+  font-size: 16px;
+  line-height: 22px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 16px;
+  height: 88px;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .place-card__des {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .place-card__des {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

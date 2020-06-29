@@ -1,0 +1,8 @@
+@import url(./__item/slider__item.css);
+@import url(./__control/slider__control.css);
+@import url(./__navigation/slider__navigation.css);
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}

@@ -1,0 +1,40 @@
+@import url(./__logo/header__logo.css);
+@import url(./__menu/header__menu.css);
+@import url(./__menu/header__menu_li.css);
+@import url(./__content/header__content.css);
+
+.header {
+  position: absolute;
+  height: 80px;
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  right: 0;
+  left: 0;
+}
+
+.header_black {
+  position: relative;
+  height: 80px;
+  box-shadow: inset 0px -1px 0px #d1d2d6;
+  right: 0;
+  left: 0;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .header {
+    height: 64px;
+  }
+
+  .header_black {
+    height: 64px;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .header {
+    height: 56px;
+  }
+
+  .header_black {
+    height: 56px;
+  }
+}

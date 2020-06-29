@@ -1,0 +1,21 @@
+.place-card__name {
+  font-family: "Roboto Slab-Medium";
+  font-size: 26px;
+  line-height: 30px;
+
+  margin: 0;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .place-card__name {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .place-card__name {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}

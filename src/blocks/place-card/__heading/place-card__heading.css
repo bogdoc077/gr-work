@@ -1,0 +1,10 @@
+.place-card__heading {
+  font-family: "Roboto Slab-Bold";
+  font-size: 16px;
+  line-height: 20px;
+
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+
+  color: #b6bcBf;
+}

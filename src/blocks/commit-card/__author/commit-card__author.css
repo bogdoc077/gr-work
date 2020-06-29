@@ -1,0 +1,7 @@
+.commit-card__author {
+  display: flex;
+}
+
+.commit-card__author_info {
+  width: 320px;
+}

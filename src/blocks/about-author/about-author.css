@@ -1,0 +1,26 @@
+@import url(./__block-img/about-author__block-img.css);
+@import url(./__block-text/about-author__block-text.css);
+
+.about-author {
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .about-author {
+    height: 250px;
+    padding-top: 61px;
+    padding-bottom: 61px;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .about-author {
+    height: auto;
+    margin: 0;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}

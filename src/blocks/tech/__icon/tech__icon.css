@@ -1,0 +1,28 @@
+.tech__icon {
+  display: flex;
+  margin-left: 178px;
+  flex-wrap: wrap;
+}
+
+.tech__icon_title {
+  font-family: "Roboto-Regular";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.tech__icon_svg {
+ width: 120px;
+ height: 120px;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .tech__icon {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .tech__icon {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,11 @@
+.analytics-info__analiz {
+  font-family: "Roboto-Regular";
+  font-size: 18px;
+  line-height: 24px;
+
+  margin: 0;
+}
+
+.analytics-info__analiz_bold {
+  font-family: "Roboto-Medium";
+}

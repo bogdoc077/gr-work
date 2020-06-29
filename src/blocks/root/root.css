@@ -1,0 +1,19 @@
+@import url(./__section/root__section.css);
+
+.root {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .root {
+
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .root {
+
+  }
+}

@@ -1,0 +1,7 @@
+.place-card__author {
+  display: flex;
+}
+
+.place-card__author_info {
+  width: 320px;
+}
