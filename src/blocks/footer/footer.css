@@ -22,6 +22,10 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .footer {
     position: relative;
+<<<<<<< HEAD
+=======
+    max-width: 288px;
+>>>>>>> 3b14b02e109b1b7a299c99465c3762dbf5af7c74
     height: 224px;
     margin: 0;
   }

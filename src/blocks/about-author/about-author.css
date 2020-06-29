@@ -15,6 +15,7 @@
   }
 }
 
+<<<<<<< HEAD
 @media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
   .about-author  {
     display: block;
@@ -23,6 +24,8 @@
   }
 }
 
+=======
+>>>>>>> 3b14b02e109b1b7a299c99465c3762dbf5af7c74
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .about-author {
     height: auto;

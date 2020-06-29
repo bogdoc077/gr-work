@@ -4,6 +4,12 @@
 @import url(./__des/place-card__des.css);
 @import url(./__heading/place-card__heading.css);
 @import url(./__data/place-card__data.css);
+<<<<<<< HEAD
+=======
+@import url(./__author/place-card__author.css);
+@import url(./__avatar/place-card__avatar.css);
+@import url(./__email/place-card__email.css);
+>>>>>>> 3b14b02e109b1b7a299c99465c3762dbf5af7c74
 
 .place-card {
   width: 400px;
