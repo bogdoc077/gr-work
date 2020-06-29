@@ -1,0 +1,30 @@
+.tabel__days {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+
+  width: 115px;
+}
+
+.tabel__days_num {
+  list-style-type: none;
+
+  font-family: "Roboto-Regular";
+  font-size: 18px;
+  line-height: 80px;
+
+  color: #1a1b22;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .tabel__days {
+    width: 125px;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .tabel__days_num {
+    line-height: 48px;
+  }
+}

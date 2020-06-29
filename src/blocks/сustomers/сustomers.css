@@ -1,0 +1,20 @@
+@import url(./__text/сustomers__text.css);
+
+.сustomers {
+  padding-top: 80px;
+  padding-bottom: 94px;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .сustomers {
+    padding-top: 48px;
+    padding-bottom: 26px;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .сustomers {
+    padding-top: 16px;
+    padding-bottom: 48px;
+  }
+}

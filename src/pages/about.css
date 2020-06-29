@@ -1,0 +1,22 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../blocks/root/root.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/title-section/title-section.css);
+@import url(../blocks/description-section/description-section.css);
+@import url(../blocks/about-author/about-author.css);
+@import url(../blocks/сustomers/сustomers.css);
+@import url(../blocks/commit-card/commit-card.css);
+@import url(../blocks/tech/tech.css);
+@import url(../blocks/history/history.css);
+@import url(../blocks/slider/slider.css);
+@import url(../blocks/list-header/list-header.css);
+@import url(../blocks/footer/footer.css);
+
+body {
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}

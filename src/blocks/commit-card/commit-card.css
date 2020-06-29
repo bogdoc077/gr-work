@@ -1,0 +1,34 @@
+@import url(./__description/commit-card__description.css);
+@import url(./__name/commit-card__name.css);
+@import url(./__des/commit-card__des.css);
+@import url(./__heading/commit-card__heading.css);
+@import url(./__data/commit-card__data.css);
+@import url(./__author/commit-card__author.css);
+@import url(./__avatar/commit-card__avatar.css);
+@import url(./__email/commit-card__email.css);
+
+.commit-card {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 16px;
+  height: 288px;
+}
+
+.commit-card:hover {
+  box-shadow: 0 8px 58px rgba(8, 29, 45, 0.1);
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .commit-card {
+    width: 336px;
+    height: 242px;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .commit-card {
+    width: 288px;
+    height: 264px;
+    margin: 0;
+  }
+}

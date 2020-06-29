@@ -1,0 +1,9 @@
+.footer__menu {
+  padding: 4px
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .footer__menu {
+    margin-bottom: 84px;
+  }
+}

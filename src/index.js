@@ -1,3 +1,1 @@
-import "./style.css";
-
-let someStr = 'Изменил, сохранил, собрал';
+import "./pages/index.css";

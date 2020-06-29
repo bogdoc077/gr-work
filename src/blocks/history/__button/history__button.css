@@ -1,0 +1,40 @@
+.history__button {
+  font-family: "Roboto-Medium";
+  font-size: 18px;
+  line-height: 24px;
+
+  display: none;
+  width: 288px;
+  height: 64px;
+  position: relative;
+  margin: 24px auto 0 auto;
+  border: 1px solid #1a1b22;
+  border-radius: 80px;
+  outline: none;
+  background: 0;
+}
+
+.history__button_link {
+  font-family: "Roboto-Medium";
+  font-size: 18px;
+  line-height: 24px;
+  color: #1a1b22;;
+
+  width: 215px;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .history__button {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .history__button {
+    display: block;
+  }
+
+  .history__button_link {
+    display: none;
+  }
+}

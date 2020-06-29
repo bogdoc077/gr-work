@@ -1,0 +1,18 @@
+.tabel__kol-mentions {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 105px;
+}
+
+.tabel__kol-mentions_num {
+  font-family: "Roboto-Regular";
+  font-size: 12px;
+  line-height: 16px;
+  color: #b6bcBf;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .tabel__kol-mentions {
+    display: none;
+  }
+}

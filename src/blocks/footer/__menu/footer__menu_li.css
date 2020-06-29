@@ -1,0 +1,17 @@
+.footer__menu_li {
+  display: inline;
+  margin-right: 34px;
+  font-size: 18px;
+  font-family: "Roboto-Medium";
+}
+
+.footer__menu_li-link {
+  color: #1a1b22;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .footer__menu_li {
+    display: block;
+    line-height: 48px;
+  }
+}

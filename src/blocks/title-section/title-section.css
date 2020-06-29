@@ -1,0 +1,32 @@
+.title-section {
+  font-family: "Roboto Slab-Medium";
+  font-size: 40px;
+  line-height: 46px;
+
+  margin-top: 0;
+  max-width: 712px;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .title-section {
+    font-size: 30px;
+    line-height: 34px;
+    max-width: 336px;
+  }
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
+  .title-section {
+    font-size: 30px;
+    line-height: 34px;
+    max-width: 336px;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .title-section {
+    font-size: 30px;
+    line-height: 34px;
+    max-width: 288px;
+  }
+}

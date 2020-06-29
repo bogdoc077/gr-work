@@ -1,0 +1,21 @@
+@import url(./__button/news__button.css);
+
+.news {
+  background: #f5f6f7;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .news {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .news {
+    padding-top: 32px;
+    padding-bottom: 44px;
+  }
+}

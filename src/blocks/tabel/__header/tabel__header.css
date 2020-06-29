@@ -1,0 +1,32 @@
+.tabel__header {
+ display: flex;
+ justify-content: flex-start;
+ border-bottom: 1px solid #1a1b22;
+}
+
+.tabel__header_data {
+  font-family: "Roboto-Regular";
+  font-size: 12px;
+  line-height: 16px;
+
+  width: 20px;
+  padding-right: 85px;
+  color: #b6bcBf;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.tabel__header_kol {
+  font-family: "Roboto-Regular";
+  font-size: 12px;
+  line-height: 16px;
+  color: #b6bcBf;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .tabel__header_data  {
+    padding-right: 60px;
+  }
+}
