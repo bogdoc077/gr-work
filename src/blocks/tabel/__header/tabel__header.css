@@ -5,7 +5,7 @@
 }
 
 .tabel__header_data {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
 
@@ -17,7 +17,7 @@
 }
 
 .tabel__header_kol {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: #b6bcBf;

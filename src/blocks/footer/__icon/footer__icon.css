@@ -1,6 +1,12 @@
-.footer__icon i{
+.footer__icon i {
  color: #000000;
  margin-right: 15px;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .footer__icon i {
+    margin-right: 10px;
+  }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {

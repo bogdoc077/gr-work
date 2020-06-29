@@ -5,7 +5,7 @@
 }
 
 .tabel__kol-mentions_num {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: #b6bcBf;

@@ -10,7 +10,7 @@
 .tabel__days_num {
   list-style-type: none;
 
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", "Arial", sans-serif;
   font-size: 18px;
   line-height: 80px;
 

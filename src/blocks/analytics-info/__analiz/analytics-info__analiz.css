@@ -1,5 +1,5 @@
 .analytics-info__analiz {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
 
@@ -7,5 +7,5 @@
 }
 
 .analytics-info__analiz_bold {
-  font-family: "Roboto-Medium";
+  font-family: "Roboto-Medium", "Arial", sans-serif;
 }

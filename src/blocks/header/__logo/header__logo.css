@@ -1,13 +1,13 @@
 .header__logo {
   font-size: 20px;
   color: #ffffff;
-  font-family: "Roboto Slab-Bold";
+  font-family: "Roboto Slab-Bold", "Arial", sans-serif;
 }
 
 .header__logo_black {
   font-size: 20px;
   color: #000000;
-  font-family: "Roboto Slab-Bold";
+  font-family: "Roboto Slab-Bold", "Arial", sans-serif;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {

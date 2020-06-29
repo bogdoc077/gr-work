@@ -2,7 +2,7 @@
   display: inline;
   margin-right: 34px;
   font-size: 18px;
-  font-family: "Roboto-Medium";
+  font-family: "Roboto-Medium", "Arial", sans-serif;
 }
 
 .header__menu_li-link {
@@ -23,7 +23,7 @@
   display: inline;
   margin-right: 34px;
   font-size: 18px;
-  font-family: "Roboto-Medium";
+  font-family: "Roboto-Medium", "Arial", sans-serif;
 }
 
 .header__menu_li_black-link {

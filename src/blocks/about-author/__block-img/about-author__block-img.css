@@ -2,38 +2,30 @@
   display: inline-block;
   opacity: 0.9;
   align-self: center;
-}
 
-.about-author__block-img img {
   width: 464px;
   height: 464px;
   border-radius: 1000px;
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  .about-author__block-img img{
+  .about-author__block-img {
     width: 232px;
     height: 232px;
-  }
-
-  .about-author__block-img{
     align-self: flex-start;
   }
 }
 
 @media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
-  .about-author__block-img img{
+  .about-author__block-img {
     width: 232px;
     height: 232px;
-  }
-
-  .about-author__block-img{
     align-self: flex-start;
   }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .about-author__block-img img{
+  .about-author__block-img {
     width: 272px;
     height: 272px;
     display: block;

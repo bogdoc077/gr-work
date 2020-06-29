@@ -15,7 +15,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js'
+    filename: 'js/[name].[chunkhash].js'
   },
   module: {
     rules: [
@@ -52,7 +52,7 @@ module.exports = {
       },
     {
         test: /\.(eot|ttf|woff|woff2)$/,
-        loader: 'file-loader?name=./vendor/fonts/[name].[ext]'
+        loader: 'file-loader?name=fonts/[name].[ext]'
     }
     ]
   },

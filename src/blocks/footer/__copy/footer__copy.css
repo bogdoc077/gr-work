@@ -1,8 +1,20 @@
 .footer__copy {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #b6bcbf;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .footer__copy {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
+  .footer__copy {
+    width: 130px;
+  }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
