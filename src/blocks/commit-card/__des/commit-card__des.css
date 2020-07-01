@@ -9,14 +9,14 @@
   height: 88px;
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
   .commit-card__des {
     font-size: 16px;
     line-height: 22px;
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 480px) {
   .commit-card__des {
     font-size: 16px;
     line-height: 22px;
