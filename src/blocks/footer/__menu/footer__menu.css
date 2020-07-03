@@ -1,0 +1,9 @@
+.footer__menu {
+  padding: 4px
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .footer__menu {
+    margin-bottom: 84px;
+  }
+}

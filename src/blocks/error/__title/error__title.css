@@ -1,0 +1,17 @@
+.error__title {
+  max-width: 356px;
+
+  font-family: "Roboto Slab-Medium", "Arial", sans-serif;
+  font-size: 26px;
+  line-height: 30px;
+
+  color: #1a1b22;
+  text-align: center;
+  margin: 100px auto 0 auto;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .error__title {
+    max-width: 288px;
+  }
+}

@@ -1,0 +1,25 @@
+@import url(./__title/cover__title.css);
+@import url(./__description/cover__description.css);
+@import url(./__search/cover__search.css);
+
+.cover {
+  height: 576px;
+  background-image: url(../../images/main-background.png);
+  -moz-background-size: cover; /* Firefox 3.6+ */
+  -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: cover; /* Opera 9.6+ */
+  background-size: cover; /* Современные браузеры */
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  .cover {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .cover {
+    height: 536px;
+  }
+}

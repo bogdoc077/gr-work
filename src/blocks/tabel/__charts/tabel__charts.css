@@ -1,0 +1,30 @@
+.tabel__charts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabel__charts_line {
+  height: 24px;
+  margin: 28px 0;
+  background: #2f71e5;
+
+  font-family: "Roboto-Medium", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #ffffff;
+
+  padding-left: 6px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .tabel__charts_line  {
+    margin: 12px 0;
+  }
+}

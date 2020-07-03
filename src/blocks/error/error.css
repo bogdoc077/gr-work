@@ -1,0 +1,9 @@
+@import url(./__title/error__title.css);
+@import url(./__description/error__description.css);
+@import url(./__img/error__img.css);
+
+.error {
+  /*display: none;*/
+  height: 374px;
+  background: #f5f6f7;
+}
