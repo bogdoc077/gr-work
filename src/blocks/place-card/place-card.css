@@ -2,11 +2,8 @@
 @import url(./__description/place-card__description.css);
 @import url(./__name/place-card__name.css);
 @import url(./__des/place-card__des.css);
-@import url(./__heading/place-card__heading.css);
 @import url(./__data/place-card__data.css);
 @import url(./__author/place-card__author.css);
-@import url(./__avatar/place-card__avatar.css);
-@import url(./__email/place-card__email.css);
 
 .place-card {
   width: 400px;
@@ -19,13 +16,17 @@
   box-shadow: 0 8px 58px rgba(8, 29, 45, 0.1);
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+.place-card a {
+  color: black;
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
   .place-card {
     width: 224px;
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 480px) {
   .place-card {
     width: 288px;
   }

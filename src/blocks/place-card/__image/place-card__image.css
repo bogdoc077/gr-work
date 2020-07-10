@@ -9,17 +9,7 @@
   left: calc(50% - 400px/2);
 }
 
-.place-card__image::after {
-  content: '';
-  display: block;
-  width: 400px;
-  height: 272px;
-  background-color: rgba(0, 0, 0, .3);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
   .place-card__image {
     width: 224px;
     height: 150px;
@@ -27,7 +17,7 @@
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 480px) {
   .place-card__image {
     width: 288px;
     height: 195px;

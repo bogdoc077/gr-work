@@ -1,8 +1,4 @@
 .history__button {
-  font-family: "Roboto-Medium", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-
   display: none;
   width: 288px;
   height: 64px;
@@ -14,6 +10,13 @@
   background: 0;
 }
 
+.history__button a {
+  font-family: "Roboto-Medium", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1a1b22;;
+}
+
 .history__button_link {
   font-family: "Roboto-Medium", "Arial", sans-serif;
   font-size: 18px;
@@ -23,13 +26,13 @@
   width: 215px;
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
   .history__button {
     display: none;
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 480px) {
   .history__button {
     display: block;
   }

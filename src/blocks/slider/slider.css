@@ -6,3 +6,59 @@
   position: relative;
   overflow: hidden;
 }
+
+.slider::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background: linear-gradient(to left, #efefef 0%, transparent 100%);
+  width: 200px;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  max-height: 288px;
+  z-index: 9999;
+}
+
+.slider::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  background: linear-gradient(to right, #efefef 0%, transparent 100%);
+  width: 200px;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  max-height: 288px;
+  z-index: 9999;
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  .slider::after  {
+    display: none;
+  }
+
+  .slider::before  {
+    display: none;
+  }
+}
+
+@media only screen and (min-width : 480px) and (max-width : 768px) {
+  .slider::after  {
+    display: none;
+  }
+
+  .slider::before  {
+    display: none;
+  }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .slider::after  {
+    display: none;
+  }
+
+  .slider::before  {
+    display: none;
+  }
+}

@@ -6,6 +6,10 @@
   margin: 0;
 }
 
-.analytics-info__analiz_bold {
+.analytics-info__analiz_bold-news {
+  font-family: "Roboto-Medium", "Arial", sans-serif;
+}
+
+.analytics-info__analiz_bold-headlines {
   font-family: "Roboto-Medium", "Arial", sans-serif;
 }

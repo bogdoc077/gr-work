@@ -1,0 +1,7 @@
+.news__out {
+  display: none;
+  margin: auto;
+  /*width: 100%;*/
+  min-height: 374px;
+  flex-direction: column;
+}

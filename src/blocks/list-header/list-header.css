@@ -5,17 +5,21 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 64px;
+  padding: 0 5%;
+  margin: 0 auto;
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
   .list-header {
     margin-bottom: 32px;
+    padding: 0 5%;
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 480px) {
   .list-header {
     flex-direction: column;
     margin-bottom: 36px;
+    padding: 0;
   }
 }

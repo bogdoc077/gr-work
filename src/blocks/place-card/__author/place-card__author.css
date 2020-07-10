@@ -1,7 +1,10 @@
 .place-card__author {
-  display: flex;
-}
+  font-family: "Roboto Slab-Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 
-.place-card__author_info {
-  width: 320px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+
+  color: #b6bcBf;
 }
