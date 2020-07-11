@@ -4,21 +4,44 @@ export default class CommitCard {
   }
   //Метод создания комиита
   create(element) {
-    return `
-        <div class="swiper-slide">
-          <div class="swiper-slide__description">
-            <p class="swiper-slide__data">${this.options.getFormattedDate(element.commit.committer.date)}</p>
-            <div class="swiper-slide__author">
-              <img class="swiper-slide__avatar" alt="Photo" src="${element.author.avatar_url}">
-              <div class="swiper-slide__author_info">
-                <h3 class="swiper-slide__name">${element.commit.committer.name}</h3>
-                <a class="swiper-slide__email" href="mailto:${element.commit.committer.email}">${element.commit.committer.email}</a>
-              </div>
-            </div>
-            <p class="swiper-slide__des">${element.commit.message}</p>
-          </div>
-        </div>
-    `;
+    const cardContainer = document.createElement('div');
+    const cardDesContainer = document.createElement('div');
+    const cardDataElement = document.createElement('p');
+    const cardAuthorContainer = document.createElement('div');
+    const cardImageAvatar = document.createElement('img');
+    const cardAuthorInfo = document.createElement('div');
+    const cardNameElement = document.createElement('h3');
+    const cardEmailElement = document.createElement('a');
+    const cardDescriptionElement = document.createElement('p');
+
+    cardContainer.classList.add('swiper-slide');
+    cardDesContainer.classList.add('swiper-slide__description');
+    cardDataElement.classList.add('swiper-slide__data');
+    cardDataElement.textContent = `${this.options.getFormattedDate(element.commit.committer.date)}`;
+    cardAuthorContainer.classList.add('swiper-slide__author');
+    cardImageAvatar.classList.add('swiper-slide__avatar');
+    cardImageAvatar.setAttribute('src', `${element.author.avatar_url}}`);
+    cardAuthorInfo.classList.add('swiper-slide__author_info');
+    cardNameElement.classList.add('swiper-slide__name');
+    cardNameElement.textContent = `${element.commit.committer.name}`;
+    cardEmailElement.classList.add('link', 'swiper-slide__email');
+    cardEmailElement.textContent = `${element.commit.committer.email}`;
+    cardDescriptionElement.classList.add('swiper-slide__des');
+    cardDescriptionElement.textContent = `${element.commit.message}`;
+
+    cardEmailElement.setAttribute('href', `mailto:${element.commit.committer.email}`);
+    cardEmailElement.setAttribute('target', '_blank');
+
+    cardContainer.appendChild(cardDesContainer);
+    cardDesContainer.appendChild(cardDataElement);
+    cardDesContainer.appendChild(cardAuthorContainer);
+    cardAuthorContainer.appendChild(cardImageAvatar);
+    cardAuthorContainer.appendChild(cardAuthorInfo);
+    cardAuthorInfo.appendChild(cardNameElement);
+    cardAuthorInfo.appendChild(cardEmailElement);
+    cardDesContainer.appendChild(cardDescriptionElement);
+
+    return cardContainer;
   }
 }
 

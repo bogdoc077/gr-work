@@ -13,8 +13,11 @@ export default class NewsApi {
                   `apiKey=${this.options.apiKey}&` +
                   `pageSize=${this.options.pageSize}`)
     .then((res) => {
-      return res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`);
+      if(res.ok) {
+        return res.json();
+      }
     })
+    .catch((err) => {return Promise.reject(`Ошибка: ${err.status}`);})
     );
   }
 }

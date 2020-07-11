@@ -5,8 +5,7 @@ export default class CommitCardList {
 
   //Метод добавления коммита
   addCommit(card) {
-    const commitsContainer = document.querySelector('.swiper-wrapper');
-    commitsContainer.insertAdjacentHTML('afterbegin', card);
+    this.options.swiperContainer.appendChild(card);
   }
 
   //Метод рендеринга коммитов

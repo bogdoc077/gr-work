@@ -51,11 +51,7 @@ export default class SearchInput {
     this.options.newsData.classList.remove('news__data_is-visible');//скрытие найденных предыдущих новостей
     this.options.newsButton.classList.remove('news__button_is-invisible');//включение кнопки доп новостей
 
-    //очистка контейнера с предыдущими найденными новостями
-    while (this.options.newsContainer.firstChild) {
-      this.options.newsContainer.removeChild(this.options.newsContainer.firstChild);
-
-    }
+    document.querySelector('.cover__search_input').setAttribute('disabled', true);
     document.querySelector('.cover__search_button').setAttribute('disabled', true);
     document.querySelector('.cover__search_button').classList.remove('cover__search_button_active');
 
@@ -65,6 +61,10 @@ export default class SearchInput {
     //запись новостей в локальное хранилище с дальнейшими действиями
     this.options.dataStorage.saveStorage(this.options.themeInput)
      .then((newsItemsArray) => {
+       //очистка контейнера с предыдущими найденными новостями
+      while (this.options.newsContainer.firstChild) {
+        this.options.newsContainer.removeChild(this.options.newsContainer.firstChild);
+      }
       //Проверка наличия новостей
       if (newsItemsArray.length === 0) {
         this._renderLoading(false, this.options.newsFind);//отключение прелоудера
@@ -77,7 +77,7 @@ export default class SearchInput {
         const len = newsItemsArray.length < maxCountNewsInBlock ? newsItemsArray.length : maxCountNewsInBlock;//переменная для опредления длины массива новостей
         //рендеринг первых трех новостей
         for (let i = 0; i < len; i += 1) {
-          newsItemsArray[i].urlToImage === null ? newsItemsArray[i].urlToImage = "./images/favicon.png" : newsItemsArray[i].urlToImage;
+          newsItemsArray[i].urlToImage === null ? newsItemsArray[i].urlToImage = "<%=require('./images/noimage.png')%>" : newsItemsArray[i].urlToImage;
           this.options.renderNews(this.options.newsCardList, newsBlock, this.options.newsCard, newsItemsArray, i);
           this._setSubmitButtonState(this.options.formSearch, this.options.searchButton);
         };
@@ -87,6 +87,7 @@ export default class SearchInput {
           this.options.newsButton.classList.add('news__button_is-invisible');//скрытие кнопки с доп новостями
         }
       }
+      document.querySelector('.cover__search_input').removeAttribute('disabled');
     })
     .catch((err) => {
       this._renderLoading(false, this.options.newsFind);//выключение прелоудера

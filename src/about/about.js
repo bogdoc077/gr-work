@@ -77,11 +77,14 @@ const githubApi = new GithubApi();
 const commitCard = new CommitCard({
   getFormattedDate: getFormattedDate
 });
+
+const swiperContainer = document.querySelector('.swiper-wrapper');
 //Создание экземпляра списка коммитов
 const commitsCardList = new CommitsCardList({
   commitCard: commitCard,
   githubApi: githubApi,
-  initSwiper: initSwiper
+  initSwiper: initSwiper,
+  swiperContainer: swiperContainer
 });
 
 //Функции

@@ -83,7 +83,6 @@ const handleKeyWord = (event) => {
   countNews = 3;
   event.preventDefault();
   searchInput.renderStartNews();
-  formSearch.reset();
 };
 
 //Функция отрисовки дополнительных карточек
