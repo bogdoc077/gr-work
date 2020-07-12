@@ -1,0 +1,7 @@
+.swiper-slide__author {
+  display: flex;
+}
+
+.swiper-slide__author_info {
+  width: 320px;
+}

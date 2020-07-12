@@ -16,6 +16,7 @@
   bottom: 0;
   right: 0;
   top: 0;
+  max-height: 288px;
 }
 
 .slider__item::before {
@@ -27,6 +28,7 @@
   bottom: 0;
   left: 0;
   top: 0;
+  max-height: 288px;
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
@@ -34,22 +36,6 @@
     justify-content: flex-start;
     grid-gap: 18px 8px;
     padding: 0 35px;
-  }
-
-  .slider__item::after  {
-    display: none;
-  }
-
-  .slider__item::before  {
-    display: none;
-  }
-}
-
-@media only screen and (min-width : 480px) and (max-width : 768px) {
-  .slider__item {
-    justify-content: flex-start;
-    grid-gap: 18px 8px;
-    padding: 0 5%;
   }
 
   .slider__item::after  {

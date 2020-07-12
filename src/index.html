@@ -23,95 +23,39 @@
     <div class="cover root__section">
       <h1 class="cover__title">Что в мире творится?</h1>
       <p class="cover__description">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-      <div class="cover__search">
-        <input type="text" name="inquiry" placeholder="Введите тему новости" required class="cover__search_input">
-        <button type="submit" class="cover__search_button">Искать</button>
-      </div>
+      <form id="search" class="cover__search" novalidate name="search">
+        <div class="input-container" style="width: 100%;">
+          <input type="text" name="inquiry" placeholder="Введите тему новости" minlength="2" required class="cover__search_input">
+          <span id="error" class="error-message"></span>
+        </div>
+        <button type="submit" class="cover__search_button" disabled>Искать</button>
+      </form>
     </div>
 
     <div class="news root__section">
-      <div class="list-header">
-        <h2 class="title-section">Результаты поиска</h2>
-        <a href="analytics.html" target="_blank" class="list-header__button">Посмотреть аналитику <i class="fas fa-chevron-right"></i></a>
+      <div class="news__error">
+        <p class="news__error-text">Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз</p>
       </div>
-      <div class="places-list">
-
-        <div class="place-card">
-          <img src="<%=require('./images/card1.png')%>" alt="Национальное достояние – парки. Яндекс.Практикум" class="place-card__image">
-          <div class="place-card__description">
-            <p class="place-card__data">2 августа, 2019</p>
-            <h3 class="place-card__name">Национальное достояние – парки</h3>
-            <p class="place-card__des">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-            <h4 class="place-card__heading">Лента.ру</h4>
-          </div>
-        </div>
-
-        <div class="place-card">
-          <img src="<%=require('./images/card2.jpg')%>" alt="Лесные огоньки: история одной фотографии. Яндекс.Практикум" class="place-card__image">
-          <div class="place-card__description">
-            <p class="place-card__data">2 августа, 2019</p>
-            <h3 class="place-card__name">Лесные огоньки: история одной фотографии</h3>
-            <p class="place-card__des">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-              из местных чудес природы.</p>
-            <h4 class="place-card__heading">Медуза</h4>
-          </div>
-        </div>
-
-        <div class="place-card">
-          <img src="<%=require('./images/card3.jpg')%>" alt="«Первозданная тайга»: новый фотопроект Игоря Шпиленка. Яндекс.Практикум" class="place-card__image">
-          <div class="place-card__description">
-            <p class="place-card__data">2 августа, 2019</p>
-            <h3 class="place-card__name">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <p class="place-card__des">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-            <h4 class="place-card__heading">Риа</h4>
-          </div>
-        </div>
-
-        <div class="place-card">
-          <img src="<%=require('./images/card4.jpg')%>" alt="Национальное достояние – парки. Яндекс.Практикум" class="place-card__image">
-          <div class="place-card__description">
-            <p class="place-card__data">2 августа, 2019</p>
-            <h3 class="place-card__name">Национальное достояние – парки</h3>
-            <p class="place-card__des">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-            <h4 class="place-card__heading">Дзен</h4>
-          </div>
-        </div>
-
-        <div class="place-card">
-          <img src="<%=require('./images/card5.jpg')%>" alt="Лесные огоньки: история одной фотографии. Яндекс.Практикум" class="place-card__image">
-          <div class="place-card__description">
-            <p class="place-card__data">2 августа, 2019</p>
-            <h3 class="place-card__name">Лесные огоньки: история одной фотографии</h3>
-            <p class="place-card__des">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-              из местных чудес природы.</p>
-            <h4 class="place-card__heading">Афиша</h4>
-          </div>
-        </div>
-
-        <div class="place-card">
-          <img src="<%=require('./images/card6.jpg')%>" alt="«Первозданная тайга»: новый фотопроект Игоря Шпиленка. Яндекс.Практикум" class="place-card__image">
-          <div class="place-card__description">
-            <p class="place-card__data">2 августа, 2019</p>
-            <h3 class="place-card__name">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <p class="place-card__des">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-            <h4 class="place-card__heading">Медиазона</h4>
-          </div>
-        </div>
-
+      <div class="news__find">
+        <i class="news__preloader circle-preloader"></i>
+        <p class="news__find-text">Идет поиск новостей...</p>
       </div>
-      <button type="submit" class="news__button">Показать еще</button>
-    </div>
+      <div class="news__out">
+        <img class="news__out-image" alt="Не найдено" src="<%=require('./images/no-rez.svg')%>">
+        <h4 class="headline news__out-title">Ничего не найдено</h4>
+        <p class="news__out-subtitle">К сожалению по вашему запросу ничего не найдено.</p>
+      </div>
 
-    <div class="info root__section">
-      <i class="info__loader"></i>
-      <p class="info__description">Идет поиск новостей...</p>
-    </div>
+      <div class="news__data api-block">
+        <div class="list-header">
+          <h2 class="title-section">Результаты поиска</h2>
+          <a href="analytics.html" target="_blank" class="list-header__button">Посмотреть аналитику <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="news__container">
 
-    <div class="error root__section">
-      <img src="<%=require('./images/no-rez.svg')%>" alt="Яндекс.Практикум - Error" class="error__img">
-      <h3 class="error__title">Ничего не найдено</h3>
-      <p class="error__description">К сожалению по вашему запросу
-        ничего не найдено.</p>
+        </div>
+        <button type="submit" class="news__button">Показать еще</button>
+      </div>
     </div>
 
     <div class="about-author root__section">
@@ -119,10 +63,10 @@
       <div class="about-author__block-text">
         <h2 class="title-section">Об авторе</h2>
         <p class="description-section">
-          Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+          Привет. Я начинающий Front-end разработчик. В процессе обучения освоил технологии разработки: HTML, CSS, JavaScript, Git, Webpack.
         </p>
         <p class="description-section">
-          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.
+          Обучение проходил в Яндекс.Практикуме. Все обучение было разбито на спринты с мягкими и жесткими дедлайнами, каждый из которых содержал в себе теоретическую часть, тренажер с практическим заданиями и самостоятельную работу в виде проекта. В результате обучения было выполнено три учебных и один дипломный проект. Дипломный проект представлен Вам на данной странице. Все проекты были проверены опытными ревьюерами команды Яндекс.Практикума. Репозитории данных проектов размещены на моей странице в Github.
         </p>
       </div>
     </div>

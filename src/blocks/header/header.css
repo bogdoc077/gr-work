@@ -9,6 +9,7 @@
   box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
   right: 0;
   left: 0;
+  z-index: 99999;
 }
 
 .header_black {
@@ -17,6 +18,7 @@
   box-shadow: inset 0px -1px 0px #d1d2d6;
   right: 0;
   left: 0;
+  z-index: 99999;
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {

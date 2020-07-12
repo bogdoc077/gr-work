@@ -1,0 +1,11 @@
+.news__out-subtitle {
+  margin-top: 16px;
+  font-family: "Roboto-Regular", "Arial", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  color: #B6BCBF;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}

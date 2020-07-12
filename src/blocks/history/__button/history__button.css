@@ -1,8 +1,4 @@
 .history__button {
-  font-family: "Roboto-Medium", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-
   display: none;
   width: 288px;
   height: 64px;
@@ -12,6 +8,13 @@
   border-radius: 80px;
   outline: none;
   background: 0;
+}
+
+.history__button a {
+  font-family: "Roboto-Medium", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1a1b22;;
 }
 
 .history__button_link {

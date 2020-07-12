@@ -1,0 +1,11 @@
+.news__analytics {
+  max-width: 223px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.news__analytics i {
+  color: #000000;
+}

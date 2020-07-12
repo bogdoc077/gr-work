@@ -1,0 +1,8 @@
+.swiper-slide__description {
+  display: flex;
+  min-height: 78px;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 24px;
+}

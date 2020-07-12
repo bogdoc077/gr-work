@@ -5,11 +5,14 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 64px;
+  padding: 0 5%;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
   .list-header {
     margin-bottom: 32px;
+    padding: 0 5%;
   }
 }
 
@@ -17,5 +20,6 @@
   .list-header {
     flex-direction: column;
     margin-bottom: 36px;
+    padding: 0;
   }
 }

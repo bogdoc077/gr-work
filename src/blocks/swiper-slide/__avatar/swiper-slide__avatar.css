@@ -1,0 +1,14 @@
+.swiper-slide__avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 1000px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: inline-block;
+  opacity: 0.9;
+  align-self: center;
+  margin-right: 16px;
+}

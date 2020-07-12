@@ -1,8 +1,0 @@
-@import url(./__loader/info__loader.css);
-@import url(./__description/info__description.css);
-
-.info {
-  /*display: none;*/
-  height: 282px;
-  background: #f5f6f7;
-}

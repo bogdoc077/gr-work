@@ -16,6 +16,7 @@
 
   margin-left: 24px;
   margin-right: 24px;
+  z-index: 99999;
 }
 
 .slider__control_left {
