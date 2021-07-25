@@ -20,7 +20,7 @@ export default class CommitCard {
     cardDataElement.textContent = `${this.options.getFormattedDate(element.commit.committer.date)}`;
     cardAuthorContainer.classList.add('swiper-slide__author');
     cardImageAvatar.classList.add('swiper-slide__avatar');
-    cardImageAvatar.setAttribute('src', `${element.author.avatar_url}}`);
+    //cardImageAvatar.setAttribute('src', `${element.author.avatar_url}`);
     cardAuthorInfo.classList.add('swiper-slide__author_info');
     cardNameElement.classList.add('swiper-slide__name');
     cardNameElement.textContent = `${element.commit.committer.name}`;

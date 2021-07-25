@@ -88,6 +88,7 @@ export default class SearchInput {
         }
       }
       document.querySelector('.cover__search_input').removeAttribute('disabled');
+      window.location.hash="news";
     })
     .catch((err) => {
       this._renderLoading(false, this.options.newsFind);//выключение прелоудера

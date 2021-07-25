@@ -5,7 +5,7 @@
 @import url(./__search-error-container/cover__search-error-container.css);
 
 .cover {
-  height: 576px;
+  height: 100vh;
   background-image: url(../../images/main-background.png);
   -moz-background-size: cover; /* Firefox 3.6+ */
   -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
@@ -16,12 +16,12 @@
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
   .cover {
-    height: 450px;
+    height: 100vh;
   }
 }
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
   .cover {
-    height: 536px;
+    height: 100vh;
   }
 }

@@ -1,7 +1,7 @@
 //Константы для запроса новостей с NewsApi
 export const formSearch = document.forms.search;
 export const themeInput = formSearch.elements.inquiry;
-export const apiKey = 'd71cc0a35cbf484d89cd771371da4274';
+export const apiKey = '666a285e17ea4f02a86ef3394b6fdf75';
 export const pageSize = '100';
 
 
